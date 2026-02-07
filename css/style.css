@@ -678,6 +678,33 @@ html, body {
     border-radius: 10px;
 }
 
+/*** WhatsApp Float ***/
+.whatsapp-float {
+    position: fixed;
+    left: 20px;
+    bottom: 24px;
+    z-index: 999;
+    background: #25D366;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+}
+
+.whatsapp-float i {
+    font-size: 22px;
+}
+
+.whatsapp-float:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /*** Gallery ***/
 .gallery-item {
     display: block;
@@ -725,10 +752,12 @@ html, body {
 }
 
 .gallery-lightbox-img {
-    max-width: min(92vw, 1100px);
-    max-height: 75vh;
+    width: min(92vw, 1100px);
+    height: 75vh;
+    object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    background: #0b1515;
 }
 
 .gallery-caption {
